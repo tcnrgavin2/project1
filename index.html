@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Roam Coffee — 探索咖啡拉花的藝術與製作技巧">
+  <title>Roam Coffee｜咖啡拉花藝術</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Roam Coffee 首頁">ROAM <span>COFFEE</span></a>
+    <button class="menu-toggle" aria-label="開啟選單" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="主要導覽">
+      <a href="#story">品牌故事</a>
+      <a href="#gallery">拉花作品</a>
+      <a href="#guide">製作指南</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">SPECIALTY COFFEE · ART IN EVERY CUP</p>
+        <h1>把第一杯咖啡<br>倒成一幅畫。</h1>
+        <p class="hero-intro">我們相信，拉花不只是裝飾，而是時間、節奏與溫度共同完成的小型儀式。</p>
+        <a class="text-link" href="#gallery">探索拉花作品 <span>↗</span></a>
+      </div>
+      <div class="hero-image" role="img" aria-label="咖啡師正在製作拉花咖啡"></div>
+      <div class="hero-stamp" aria-hidden="true">CRAFT<br><strong>DAILY</strong></div>
+    </section>
+
+    <section class="manifesto" id="story">
+      <div class="section-number">01</div>
+      <div class="manifesto-copy">
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+        <h2>慢下來，<br>才能看見細節。</h2>
+      </div>
+      <p class="manifesto-text">從選豆、研磨、萃取到奶泡整合，每一次動作都在塑造杯中的風味。拉花，是最後一步，也常常是最動人的一步。</p>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-heading">
+        <div><p class="eyebrow">LATTE ART</p><h2>杯中的線條</h2></div>
+        <p>每一朵花都只屬於此刻。</p>
+      </div>
+      <div class="gallery-grid">
+        <article class="gallery-card gallery-card--large">
+          <img src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=1200&q=85" alt="心形拉花拿鐵">
+          <div class="card-label"><span>Rosetta</span><small>01</small></div>
+        </article>
+        <article class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=900&q=85" alt="葉形拉花咖啡">
+          <div class="card-label"><span>Leaf</span><small>02</small></div>
+        </article>
+        <article class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=900&q=85" alt="經典心形拉花">
+          <div class="card-label"><span>Heart</span><small>03</small></div>
+        </article>
+        <article class="gallery-card gallery-card--large">
+          <img src="https://images.unsplash.com/photo-1617196038820-1e3f5c8b6d9e?auto=format&fit=crop&w=1200&q=85" alt="複雜拉花圖案咖啡">
+          <div class="card-label"><span>Tulip</span><small>04</small></div>
+          </article>                                  
+      </div>
+    </section>
+
+    <section class="guide" id="guide">
+      <div class="guide-image" role="img" aria-label="咖啡拉花製作過程"></div>
+      <div class="guide-content">
+        <p class="eyebrow">THE PROCESS</p>
+        <h2>三個動作，<br>一朵屬於你的花。</h2>
+        <ol class="steps">
+          <li><button class="step is-active" data-step="1"><span>01</span><strong>打出絲綢般的奶泡</strong><i>+</i></button><p>將牛奶打至 60–65°C，形成細緻、有光澤的微泡。</p></li>
+          <li><button class="step" data-step="2"><span>02</span><strong>靠近杯面開始流動</strong><i>+</i></button><p>從杯中靠近表面的部分開始倒奶，讓奶液自然鋪開。</p></li>
+          <li><button class="step" data-step="3"><span>03</span><strong>抬高拉出葉脈</strong><i>+</i></button><p>收尾前抬高拉壓力，再快速劃過中心，完成圖案。</p></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand brand--footer" href="#home">ROAM <span>COFFEE</span></a>
+    <p>TAIPEI · TAIWAN</p>
+    <button class="back-top" aria-label="回到頁首">↑</button>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
