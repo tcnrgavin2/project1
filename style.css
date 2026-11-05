@@ -21,7 +21,9 @@ button { color: inherit; font: inherit; }
 .brand { font-size: 19px; font-weight: 600; letter-spacing: .12em; }
 .brand span { color: var(--rust); }
 .nav { display: flex; gap: 38px; margin-left: auto; font-size: 13px; }
-.nav a { position: relative; }
+.nav a { position: relative; display: inline-flex; align-items: center; gap: 7px; }
+.nav-icon { color: var(--rust); font-size: 15px; line-height: 1; transition: transform .25s ease; }
+.nav a:hover .nav-icon { transform: translateY(-2px) rotate(-8deg); }
 .nav a::after { content: ""; position: absolute; left: 0; bottom: -7px; width: 0; height: 1px; background: var(--rust); transition: width .3s; }
 .nav a:hover::after { width: 100%; }
 .menu-toggle { display: none; }
