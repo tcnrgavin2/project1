@@ -19,6 +19,9 @@
       <a href="#gallery">拉花作品</a>
       <a href="#guide">製作指南</a>
     </nav>
+    <button class="cart-toggle" type="button" aria-label="開啟購物車" aria-expanded="false">
+      購物車 <span class="cart-count" aria-live="polite">0</span>
+    </button>
   </header>
 
   <main>
@@ -51,19 +54,35 @@
         <article class="gallery-card gallery-card--large">
           <img src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=1200&q=85" alt="心形拉花拿鐵">
           <div class="card-label"><span>Rosetta</span><small>01</small></div>
+          <div class="product-actions">
+            <strong>NT$ 180</strong>
+            <button class="add-to-cart" type="button" data-id="rosetta" data-name="Rosetta 拉花拿鐵" data-price="180">加入購物車</button>
+          </div>
         </article>
         <article class="gallery-card">
           <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=900&q=85" alt="葉形拉花咖啡">
           <div class="card-label"><span>Leaf</span><small>02</small></div>
+          <div class="product-actions">
+            <strong>NT$ 160</strong>
+            <button class="add-to-cart" type="button" data-id="leaf" data-name="Leaf 葉形拿鐵" data-price="160">加入購物車</button>
+          </div>
         </article>
         <article class="gallery-card">
           <img src="https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=900&q=85" alt="經典心形拉花">
           <div class="card-label"><span>Heart</span><small>03</small></div>
+          <div class="product-actions">
+            <strong>NT$ 150</strong>
+            <button class="add-to-cart" type="button" data-id="heart" data-name="Heart 心形拿鐵" data-price="150">加入購物車</button>
+          </div>
         </article>
         <article class="gallery-card gallery-card--large">
           <img src="https://images.unsplash.com/photo-1617196038820-1e3f5c8b6d9e?auto=format&fit=crop&w=1200&q=85" alt="複雜拉花圖案咖啡">
           <div class="card-label"><span>Tulip</span><small>04</small></div>
-          </article>                                  
+          <div class="product-actions">
+            <strong>NT$ 190</strong>
+            <button class="add-to-cart" type="button" data-id="tulip" data-name="Tulip 鬱金香拿鐵" data-price="190">加入購物車</button>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -86,6 +105,19 @@
     <p>TAIPEI · TAIWAN</p>
     <button class="back-top" aria-label="回到頁首">↑</button>
   </footer>
+
+  <div class="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-panel" aria-labelledby="cart-title" aria-hidden="true">
+    <div class="cart-header">
+      <h2 id="cart-title">我的購物車</h2>
+      <button class="cart-close" type="button" aria-label="關閉購物車">×</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>總計</span><strong>NT$ 0</strong></div>
+      <button class="checkout-button" type="button">前往結帳</button>
+    </div>
+  </aside>
   <script src="script.js"></script>
 </body>
 </html>
