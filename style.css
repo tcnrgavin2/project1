@@ -60,7 +60,7 @@ button { color: inherit; font: inherit; }
 .gallery-heading { margin-bottom: 48px; display: flex; justify-content: space-between; align-items: flex-end; }
 .gallery-heading h2 { margin: 0; font-size: 52px; }
 .gallery-heading > p { font-family: "Noto Serif TC", serif; font-size: 14px; }
-.gallery-grid { display: grid; grid-template-columns: 1.25fr 1fr; grid-template-rows: 330px 330px; gap: 24px; }
+.gallery-grid { display: grid; grid-template-columns: 1.25fr 1fr; grid-auto-rows: 330px; gap: 24px; }
 .gallery-card { position: relative; overflow: hidden; }
 .gallery-card--large { grid-row: 1 / 3; }
 .gallery-card img { height: 100%; object-fit: cover; transition: transform .7s ease; }
@@ -140,7 +140,7 @@ footer p { text-align: center; font-size: 9px; letter-spacing: .22em; }
   .gallery-heading { align-items: flex-start; }
   .gallery-heading > p { display: none; }
   .gallery-heading h2 { font-size: 42px; }
-  .gallery-grid { grid-template-columns: 1fr; grid-template-rows: repeat(3, 340px); }
+  .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 340px; }
   .gallery-card--large { grid-row: auto; }
   .guide { grid-template-columns: 1fr; }
   .guide-image { height: 430px; }
