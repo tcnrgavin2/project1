@@ -89,8 +89,18 @@ document.querySelectorAll('.add-to-cart').forEach((button) => {
 
     saveCart();
     renderCart();
+    button.classList.remove('is-added');
+    cartCount.classList.remove('is-bouncing');
+    void button.offsetWidth;
+    void cartCount.offsetWidth;
+    button.classList.add('is-added');
+    cartCount.classList.add('is-bouncing');
     button.textContent = '已加入';
-    window.setTimeout(() => { button.textContent = '加入購物車'; }, 900);
+    window.setTimeout(() => {
+      button.textContent = '加入購物車';
+      button.classList.remove('is-added');
+      cartCount.classList.remove('is-bouncing');
+    }, 900);
   });
 });
 
