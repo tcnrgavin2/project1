@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="聯絡 Roam Coffee，分享你的想法或詢問咖啡相關問題。">
+  <title>聯絡我們｜Gavin Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Roam Coffee 首頁"><span class="brand-icon" aria-hidden="true">☕</span> ROAM <span>COFFEE</span></a>
+    <button class="menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="主要導覽">
+      <a href="index.html#story"><span class="nav-icon" aria-hidden="true">◇</span>品牌故事</a>
+      <a href="index.html#gallery"><span class="nav-icon" aria-hidden="true">☕</span>拉花作品</a>
+      <a href="index.html#guide"><span class="nav-icon" aria-hidden="true">⌁</span>製作指南</a>
+      <a href="contact.html" aria-current="page"><span class="nav-icon" aria-hidden="true">✉</span>聯絡我們</a>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <section class="contact-intro">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h1>聊聊咖啡，<br>也聊聊你的想法。</h1>
+      <p>有合作提案、課程問題，或只是想分享一杯咖啡的故事？歡迎留下訊息。</p>
+    </section>
+
+    <section class="contact-form-section" aria-labelledby="contact-form-title">
+      <div class="contact-form-heading">
+        <p class="eyebrow">WE’RE LISTENING</p>
+        <h2 id="contact-form-title">寫信給我們</h2>
+        <p>填寫以下資料，讓我們知道如何回覆你。</p>
+      </div>
+      <form class="contact-form">
+        <div class="form-field">
+          <label for="contact-name">姓名</label>
+          <input id="contact-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="contact-email">電子郵件</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-field">
+          <label for="contact-topic">聯絡主題</label>
+          <select id="contact-topic" name="topic" required>
+            <option value="" selected disabled>請選擇主題</option>
+            <option value="合作提案">合作提案</option>
+            <option value="課程詢問">課程詢問</option>
+            <option value="產品問題">產品問題</option>
+            <option value="其他">其他</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="contact-message">訊息</label>
+          <textarea id="contact-message" name="message" rows="6" required></textarea>
+        </div>
+        <p class="form-note">目前表單尚未連接寄送服務，送出後訊息不會實際寄出。</p>
+        <button class="contact-submit" type="submit">送出訊息 <span aria-hidden="true">↗</span></button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand brand--footer" href="index.html#home">ROAM <span>COFFEE</span></a>
+    <p>TAIPEI · TAIWAN</p>
+    <a class="contact-back-top" href="#top" aria-label="回到頁首">↑</a>
+  </footer>
+  <script src="contact.js"></script>
+</body>
+</html>
